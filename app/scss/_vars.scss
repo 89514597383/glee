@@ -1,23 +1,33 @@
-$accent: #fe6579 ;
-$default: #8d8d8d ;
-$title: #29282d ;
 
-%quicksand-400{
-  font-family: 'Quicksand-Regular', sans-serif;
+$default: #436372;
+$text: #243f4d;
+
+%dmsans-400{
+  font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
 }
 
-%quicksand-500{
-  font-family: 'Quicksand-Medium', sans-serif;
+%dmsans-500{
+  font-family: 'DMSans-Medium', sans-serif;
   font-weight: 500;
 }
 
-%roboto-400{
-  font-family: 'Roboto-Regular', sans-serif;
+%dmsans-700{
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%poppins-700{
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%rubik-400{
+  font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
 
-%roboto-700{
-  font-family: 'Roboto-Bold', sans-serif;
-  font-weight: 700;
+%rubik-500{
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
 }
