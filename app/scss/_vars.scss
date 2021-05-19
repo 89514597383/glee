@@ -45,3 +45,15 @@ $poduct: #f8f8f8;
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+
+%btn{
+  background-color: $suptext;
+  color: #fff;
+  @extend  %dmsans-400;
+  padding: 8px 17px;
+  cursor: pointer;
+}
+
+
+
+

@@ -1,12 +1,36 @@
+html,
+body{
+  height: 100%;
+}
+
 body{
   color: $default;
   font-size: 16px;
   line-height: 26px;
   @extend %rubik-400;
+  display: flex;
+  flex-direction: column;
 }
 
-.container{
+.main{
+  flex-grow: 1;
+}
+
+.page-container{
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a{
+  color: $contacttext;
+  font-size: 14px;
+  line-height: 32px;
+  @extend %rubik-400;
 }
