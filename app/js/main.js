@@ -9,4 +9,5 @@ $(function () {
   });
 
   var mixer = mixitup('.products__content');
+  var mixer = mixitup('.design__content');
 })

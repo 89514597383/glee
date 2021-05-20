@@ -353,17 +353,9 @@
     justify-content: space-between;
     margin: 0 auto 75px;
   }
-  &__filter-btn{
-    font-size: 16px;
-    line-height: auto;
-    color: $subtext;
-    @extend %dmsans-700;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
+
   &__filter-btn.mixitup-control-active{
-    color: #1a1a1a;
+    color: $suptitle;
   }
   &__content{
     display: grid;
@@ -530,7 +522,77 @@
   }
 }
 
+.design{
+  margin: 100px 0 120px;
+  &__filter{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 75px;
+  }
+  &__filter-btn.mixitup-control-active{
+    color: $suptitle;
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 34px 30px;
+  }
+  &__item{
+    position: relative;
+    padding: 40px 0 0 30px;
+    width: 370px;
+    height: 250px;
+    background-color: $poduct;
+    z-index: 1;
+  }
+  &__item-title{
+    width: 175px;
+    font-size: 20px;
+    line-height: auto;
+    color: $suptitle;
+    @extend %dmsans-700;
+    margin-bottom: 10px;
+  }
+  &__item-text{
+    font-size: 16px;
+    line-height: auto;
+    color: $suptext;
+    @extend %dmsans-700;
+  }
+  &__inner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+  }
+  &__armchair{
+    position: absolute;
+    bottom: 45px;
+    right: 55px;
+    z-index: -10;
+  }
+  &__chair{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: -10;
+  }
+}
 
+.video-popup{
+  width: 100%;
+  min-height: 500px;
+  background-image: url(../images/video-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0;
+}
 
 
 
