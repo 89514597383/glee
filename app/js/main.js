@@ -8,6 +8,15 @@ $(function () {
     autoplaySpeed: 2000,
   });
 
-  var mixer = mixitup('.products__content');
-  var mixer = mixitup('.design__content');
+  var filter__1 = document.querySelector('[data-ref="filter-1"]');
+  var filter__2 = document.querySelector('[data-ref="filter-2"]');
+
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+
+  var mixer1 = mixitup(filter__1, config);
+  var mixer2 = mixitup(filter__2, config);
 })
