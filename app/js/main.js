@@ -1,3 +1,4 @@
+
 $(function () {
 
   $('.top-slider__inner').slick({
@@ -10,7 +11,6 @@ $(function () {
 
   var filter__1 = document.querySelector('[data-ref="filter-1"]');
   var filter__2 = document.querySelector('[data-ref="filter-2"]');
-
   var config = {
     controls: {
       scope: 'local'

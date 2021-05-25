@@ -98,17 +98,3 @@ exports.default = parallel(styles, scripts, browsersync, watching);
 
 // Используем после работы 'gulp build'
 exports.build = series(cleanDist, images, build);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
