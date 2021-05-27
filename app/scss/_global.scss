@@ -155,3 +155,30 @@ a{
       padding: 20px 0;
     }
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  &__list{
+    display: flex;
+  }
+  &__link,
+  &__next{
+    display: inline-block;
+    height: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    border: 1px solid $suptext;
+    padding: 16px 20px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link--active{
+    background-color: $suptext;
+    color: #fff;
+  }
+}
