@@ -57,9 +57,11 @@ $poduct: #f8f8f8;
   @extend  %dmsans-400;
   padding: 8px 17px;
   cursor: pointer;
+  border: none;
 }
 
-%checkbox-hidden{
+%checkbox-hidden,
+%radio-hidden{
   width: 1px;
   height: 1px;
   overflow: hidden;
