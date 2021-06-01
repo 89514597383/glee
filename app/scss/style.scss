@@ -421,9 +421,9 @@
   }
   &__item-img{
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
     left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
   }
   &__item-title{
     font-size: 16px;
@@ -438,7 +438,6 @@
     display: none;
   }
 }
-
 .products__item{
   &.products__item--list{
     min-width: 100%;
@@ -487,11 +486,11 @@
       box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
       svg{
         path{
-          fill:#a3bbc8; 
+          fill:#a3bbc8;
         }
       }
       &:hover{
-        background-color: #a3bbc8; 
+        background-color: #a3bbc8;
         svg{
           path{
             fill:#fff;
@@ -513,7 +512,7 @@
           width: 208px;
           height: 50px;
           border-radius: 5px;
-          position: relative; 
+          position: relative;
           &::before{
             position: absolute;
             content: 'Add to cart';
