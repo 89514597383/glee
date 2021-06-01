@@ -1319,6 +1319,33 @@
   background-color: $suptext;
 }
 
+.filter-search{
+  &__form{
+    position: relative;
+  }
+  &__input{
+    padding: 5px 10px;
+    width: 223px;
+    height: 43px;
+    border: 2px solid #ebf1f3;
+    border-radius: 5px;
+  }
+  &__btn{
+    position: absolute;
+    width: 50px;
+    height: 43px;
+    background-color: #ebf1f3;
+    border-radius: 5px;
+    right: 0;
+    border: none;
+    padding: 13px 15.5px;
+    img{
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
 .filter-brand{
   &__label{
     margin-bottom: 3px;
@@ -1692,7 +1719,149 @@
   }
 }
 
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+    margin-right: 70px;
+  }
+  &__aside{
+    width: 270px;
+  } 
+  &__item{
+    margin-bottom: 50px;
+  }
+  &__item-img{
+    width: 830px;
+    height: 500px;
+  }
+  &__item-wrapper{
+    position: relative;
+  }
+  &__item-box{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: -105px;
+    width: 275px;
+    height: 70px;
+    background-color: #a3bbc8;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item-date,
+  &__item-author{
+    position: relative;
+    padding-left: 20px;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 13px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__item-date{
+    &::before{
+      background-image: url(../images/icons/calendar-white.svg);
+    }
+  }
+  &__item-author{
+    margin-left: 25px;
+    &::before{
+      background-image: url(../images/icons/author.svg);
+    }
+  }
+  &__item-title{
+    font-size: 36px;
+    line-height: 26px;
+    color: #333333;
+    margin: 35px 0;
+  }
+  &__item-text{
+    margin-bottom: 40px;
+  }
+  &__item-links{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 12px;
+    color: $suptext;
+    @extend %rubik-500;
+    border: 1px solid $suptext;
+    padding: 23px 85px 23px 20px;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/arrows-blue.svg);
+      background-repeat: no-repeat;
+      display: block;
+      width: 22px;
+      height: 9px;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__pagination{
+    justify-content: start;
+    margin-top: 75px;
+    a{
+      margin: 0 16px 0 0;
+    }
+  }
+}
 
+.recent{
+  &__item{
+    display: flex;
+    & + .recent__item{
+      margin-top: 22px;
+    }
+  }
+  &__link{
+    min-width: 71px;
+    height: 71px;
+    margin-right: 20px;
+  }
+  &__box-title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  } 
+  &__date{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+    color: #9a9a9a;
+    padding-left: 20px;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 13px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/icons/calendar.svg);
+      background-size: cover;
+    }
+  }
+}
 
 
 
