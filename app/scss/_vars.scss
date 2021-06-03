@@ -54,7 +54,7 @@ $poduct: #f8f8f8;
 %btn{
   background-color: $suptext;
   color: #fff;
-  @extend  %dmsans-400;
+  @extend %dmsans-400;
   padding: 8px 17px;
   cursor: pointer;
   border: none;
