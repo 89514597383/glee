@@ -1,0 +1,114 @@
+.header{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    margin-left: 35px;
+  }
+  &__list-link{
+    font-size: 15px;
+    color: $default;
+    transition: all 0.3s;
+    @extend %poppins-700;
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__item-search,
+  &__item-more{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item-search{
+    background-color: #edf1f4;
+    margin-right: 20px;
+  }
+  &__item-more{
+    background-color: #a3bbc8;
+    margin-left: 20px;
+  }
+  &__item-connection{
+    position: relative;
+    display: flex;
+    width: 177px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: $header;
+  }
+  &__item-connection::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 32px;
+    background-color: #fde7d3;
+    top: 9px;
+    left: 88px;
+  }
+  &__link-heart{
+    position: relative;
+    left: 40px;
+    top: 22px;
+    height: 17px;
+  }
+  &__link-cart{
+    position: relative;
+    left: 100px;
+    top: 22px;
+    height: 17px;
+  }
+  &__num{
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: $title;
+    @extend %dmsans-400;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}

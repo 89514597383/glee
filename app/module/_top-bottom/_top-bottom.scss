@@ -1,0 +1,59 @@
+.top-bottom{
+  max-width: 1770px;
+  width: 100%;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fef7f0;
+  &__item{
+    position: relative;
+    width: 370px;
+    padding-left: 100px;
+    &:nth-child(1)::before{
+      position: absolute;
+      content: "";
+      width: 51px;
+      height: 53px;
+      background-image: url(../images/header/support.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 25px;
+      top: 10px;
+    }
+    &:nth-child(2)::before{
+      position: absolute;
+      content: "";
+      width: 53px;
+      height: 36px;
+      background-image: url(../images/header/delivery.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 25px;
+      top: 10px;
+    }
+    &:nth-child(3)::before{
+      position: absolute;
+      content: "";
+      width: 53px;
+      height: 53px;
+      background-image: url(../images/header/payment.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 25px;
+      top: 10px;
+    }
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 40px;
+    @extend %dmsans-700;
+    color: $subtitle;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %dmsans-400;
+    color: $text;
+  }
+}
