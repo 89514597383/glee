@@ -8,6 +8,9 @@
 }
 
 .menu{
+  &__btn{ 
+    display: none;
+  }
   &__list{
     display: flex;
   }
@@ -111,4 +114,145 @@
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media (max-width: 1000px){
+  .user-nav{
+    flex-wrap: wrap;
+    width: 130px;
+    &__item-search{
+      margin-right: 15px;
+    }
+    &__item-connection{
+      margin-top: 10px;
+      width: 130px;
+      order: 1;
+      &::after{
+        left: 64px;
+      }
+    }
+    &__item-more{
+      margin-left: 15px;
+    }
+    &__link-heart{
+      left: 20px;
+    }
+    &__link-cart{
+      left: 70px;
+    }
+  }
+}
+
+@media (max-width: 860px){
+  .user-nav{
+    width: auto;
+    &__item-connection{
+      margin-top: 0;
+      order: 0;
+    }
+  }
+  .menu{
+    order: 1;
+    margin-left: 40px;
+    &__list{
+      transform: translateY(-200%);
+      position: absolute;
+      width: 100%;
+      top: 120px;
+      left: 0;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      transition: all 0.3s;
+      &.menu__list--active{
+        transform: translateY(0%);
+        transition: all 0.3s;
+      }
+    }
+    &__list-item + .menu__list-item{
+      margin-left: 0;
+    }
+    &__list-item{
+      width: 100%;
+      padding: 0 15px;
+      text-align: center;
+    }
+    &__list-link{
+      width: 100%;
+      padding: 12px 0;
+      display: block;
+    }
+    &__btn{
+      width: 30px;
+      height: 22px;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 0;
+      outline: none;
+      span{
+        width: 100%;
+        height: 3px;
+        background-color: $title;
+        transition: all .3s;
+      }
+      &::after,
+      &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: $title;
+        transition: all .3s;
+      }
+      &::before{
+        top: 0;
+      }
+      &::after{
+        bottom: 0;
+      }
+    }
+    &__btn--active{
+      span{
+        transform: rotate(45deg);
+      }
+      &::after,
+      &::before{
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &::before{
+        transform: rotate(45deg);
+      }
+      &::after{
+        transform: rotate(135deg);
+      }
+    }
+  }
+  .dropdown-content{
+    display: none;
+    a{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .header{
+    &__inner{
+      flex-wrap: wrap;
+    }
+  }
+  .user-nav{
+    flex-wrap: nowrap;
+    margin: 10px auto 0;
+    order: 1;
+  }
+  .menu__list{
+    top: 160px;
+  }
 }
