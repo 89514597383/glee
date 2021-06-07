@@ -1,22 +1,22 @@
 .top-slider{
-  background-color: $header;
-  max-width: 1770px;
   width: 100%;
-  margin: 0 auto;
-  padding: 100px 0 45px;
-  display: flex;
-  justify-content: center;
+  &__wrapper{
+    background-color: $header;
+    padding: 100px 0 45px;
+    max-width: 1770px;
+    margin: 0 auto;
+  }
   &__container{
     max-width: 1430px;
+    margin: 0 auto;
   }
   &__item{
-    width: 100%;
     display: flex !important;
     justify-content: space-between;
   }
   &__info{
-    margin: 120px 0 0 130px;
-    width: 420px;
+    padding: 120px 0 0 130px;
+    width: 560px;
   }
   &__info-title{
     width: 430px;
@@ -89,6 +89,88 @@
         opacity: 1;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .top-slider{
+    &__wrapper{
+      padding: 0 0 30px 0;
+    }
+    &__content{
+      margin-top: 70px;
+    }
+    &__info{
+      width: 850px;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .top-slider{
+    &__content{
+      display: none;
+    }
+    &__info{
+      width: 100%;
+      width: auto;
+      margin: 0 auto;
+      padding: 60px 0 20px;
+    }
+    &__info-title{
+      font-size: 55px;
+      line-height: 60px;
+      margin-bottom: 20px;
+      width: 360px;
+    }
+    &__info-text{
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .top-slider{
+    &__content{
+      display: none;
+    }
+    &__info{
+      width: 100%;
+      width: auto;
+      margin: 0 auto;
+      padding: 60px 0 20px;
+    }
+    &__info-title{
+      font-size: 45px;
+      line-height: 45px;
+      margin-bottom: 15px;
+      max-width: 300px;
+    }
+    &__info-text{
+      max-width: 300px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__info-link{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px){
+.top-slider{
+    &__info-title{
+      max-width: 270px;
+      font-size: 40px;
+      line-height: 45px;
+    }
+    &__info-text{
+      max-width: 270px;
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 }

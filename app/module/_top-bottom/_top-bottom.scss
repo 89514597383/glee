@@ -9,8 +9,10 @@
   &__item{
     position: relative;
     width: 370px;
-    padding-left: 100px;
-    &:nth-child(1)::before{
+    padding-left: 100px; 
+  }
+  &__item-sup{
+    &::before{
       position: absolute;
       content: "";
       width: 51px;
@@ -21,7 +23,9 @@
       left: 25px;
       top: 10px;
     }
-    &:nth-child(2)::before{
+  }
+  &__item-del{
+     &::before{
       position: absolute;
       content: "";
       width: 53px;
@@ -30,9 +34,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       left: 25px;
-      top: 10px;
+      top: 20px;
     }
-    &:nth-child(3)::before{
+  }
+  &__item-pay{
+    &::before{
       position: absolute;
       content: "";
       width: 53px;
@@ -55,5 +61,50 @@
     line-height: 30px;
     @extend %dmsans-400;
     color: $text;
+  }
+}
+
+@media (max-width: 1200px){
+  .top-bottom{
+    &__item{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .top-bottom{
+    &__item{
+      padding-left: 70px;
+    }
+    &__item-sup,
+    &__item-del,
+    &__item-pay{
+      &::before{
+        left: 10px;
+      }
+    }
+    &__title{
+      font-size: 16px;
+      line-height: 35px;    
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .top-bottom{
+    padding: 10px 0;
+    flex-wrap: wrap;
+    &__wrapper{
+      width: 100%;
+    }
+    &__item{
+      width: 250px;
+      margin: 0 auto 20px;
+    }
   }
 }
