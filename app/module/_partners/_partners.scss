@@ -1,0 +1,11 @@
+.partners{
+  width: 100%;
+  background-color: $bot-hed;
+  &__content{
+    width: 1170px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
