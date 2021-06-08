@@ -140,9 +140,12 @@
     }
     &__text{
       width: 260px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 17px;
-      margin: 10px 0 20px;
+      margin: 15px 0 25px;
+    }
+    &__link{
+      width: 100%;
     }
   }
 }
