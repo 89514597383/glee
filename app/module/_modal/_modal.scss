@@ -1,0 +1,76 @@
+.modal{
+  padding: 120px 0;
+  max-width: 470px;
+  margin: 0 auto;
+  &__form{
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__label{
+    display: block;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: $default;
+    margin-bottom: 20px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    margin-top: 10px;
+    height: 60px;
+    padding: 0 15px;
+    border: 2px solid #f6f6f6;
+  }
+  &__btn{
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    @extend %rubik-500;
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 20px 0;
+    border: none;
+    margin-top: 20px;
+  }
+  &__label-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 48px;
+    @extend %rubik-400;
+    color: $default;
+  }
+  &__error{
+    font-size: 14px;
+    line-height: 48px;
+    @extend %rubik-400;
+    color: $default;
+  }
+  &__register{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+    @extend %rubik-400;
+    color: $default;
+    margin: 24px 0;
+  }
+  &__create{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    @extend %rubik-500;
+    color: $title;
+    border: 2px solid $suptext;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 600px){
+  .modal{
+    padding: 70px 0;
+  }
+}
