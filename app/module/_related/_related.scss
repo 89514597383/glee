@@ -1,0 +1,291 @@
+.related{
+  margin-bottom: 40px;
+  &__title{
+    text-align: left;
+    padding: 0;
+  }
+  &__items{
+    height: 570px;
+    display: flex;
+    align-items: center;
+    .slick-prev,
+    .slick-next{
+      position: absolute;
+      top: -40px;
+      right: 0;
+      z-index: 5;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 2px solid #a3bbc8;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: none;
+    }
+    .slick-prev{
+      right: 70px;
+    }
+    .slick-disabled{
+      border: 2px solid #edf1f4;
+      path{
+        fill: #edf1f4;
+      }
+    }
+  }
+  .slick-track{
+    padding: 80px 0;
+  }
+  &__item{
+    margin: 15px;
+  }
+}
+
+.products{
+  margin: 70px 0 80px;
+  &__filter{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 75px;
+  }
+
+  &__filter-btn.mixitup-control-active{
+    color: $suptitle;
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &__item{
+    min-width: 270px;
+    height: 380px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+  }
+  &__item-add{
+    position: absolute;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+  &__item-add__inner{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  &__item-images{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__item:hover{
+    .products__item-add{
+      z-index: 10;
+    }
+    svg{
+      path{
+        fill:#a3bbc8;
+      }
+    }
+  }
+  &__item-add__inner:hover{
+    background-color: #a3bbc8;
+    svg{
+      path{
+        fill:#fff;
+      }
+    }
+  }
+  &__item-inner{
+    min-width: 270px;
+    height: 270px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__item-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+  }
+  &__item-title{
+    font-size: 16px;
+    color: $title;
+    @extend %dmsans-500;
+  }
+  &__item-text{
+    color: $suptext;
+    @extend %dmsans-700;
+  }
+  &__item-box__inner{
+    display: none;
+  }
+}
+
+.products__item{
+  &.products__item--list{
+    min-width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: left;
+    box-shadow: none;
+    position: relative;
+    .products__item-inner{
+      display: block;
+      min-width: 370px;
+      height: 500px;
+      border: 2px solid #f2f2f2;
+      margin-right: 60px;
+    }
+    .products__item-img{
+      width: 65%;
+    }
+    .products__item-info{
+      display: none;
+    }
+    .products__item-box{
+      max-width: 415px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #333333;
+    }
+    .products__item-box__inner{
+      display: block;
+      margin-bottom: 30px;
+    }
+    .products__item-add{
+      position: relative;
+      transform: none;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    .products__item-add__inner{
+      position: absolute;
+      width: 50px;
+      min-height: 50px;
+      border-radius: 0;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      svg{
+        path{
+          fill:#a3bbc8;
+        }
+      }
+      &:hover{
+        background-color: #a3bbc8;
+        svg{
+          path{
+            fill:#fff;
+          }  
+        }
+      }
+      &:nth-child(1){
+        display: none;
+      }
+      &:nth-child(2){
+        left: 0;
+        z-index: 100;
+        position: relative;
+        background-color: #a3bbc8;
+        // transition: all 0.5s; тоже интересно
+        transition: all 0.1s;  
+        &:hover{
+          transition: all 0.5s;
+          width: 208px;
+          height: 50px;
+          border-radius: 5px;
+          position: relative;
+          &::before{
+            position: absolute;
+            content: 'Add to cart';
+            text-transform: uppercase;
+            width: 110px;
+            font-size: 15px;
+            line-height: 30px;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          svg{
+            display: none;
+          }
+        }
+        svg{
+          path{
+            fill:#fff;
+          }
+        }
+      }
+      &:nth-child(3){
+        left: 60px;
+      }
+    }
+    .products__item-box__title{
+      @extend %rubik-400;
+      font-size: 40px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    .products__item-box__price{
+      @extend %rubik-400;
+      font-size: 30px;
+      line-height: 45px;
+      margin: 20px 0;
+    }
+    .products__item-box__text{
+      font-size: 16px;
+      line-height: 30px;
+      color: $title;
+    }
+    .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .jq-ry-container>.jq-ry-group-wrapper {
+      width: 120px;
+    }
+  }  
+}
+
+@media (max-width: 400px){
+  .related__items{
+    .slick-arrow{
+      top: auto;
+      bottom: 0;
+      left: 20px;
+    }
+    .slick-next{
+      right: 20px;
+      left: auto;
+    }
+  }
+  .related{
+    &__items{
+      margin-bottom: 30px;
+      height: auto;
+    }
+    .slick-track{
+      padding: 60px 0;
+    }
+  }
+}

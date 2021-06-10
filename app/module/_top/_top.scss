@@ -1,0 +1,8 @@
+.top{
+  background-color: #edf1f4;
+  padding: 35px 0;
+  &__title{
+    @extend %rubik-400;
+    padding-bottom: 8px;
+  }
+}
