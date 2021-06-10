@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  });
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
@@ -20,6 +24,29 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   $('.product-tabs__top-item').on('click', function (e) {
@@ -45,6 +72,15 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+          draggable: true,
+          arrows: true,
+        }
+      },
+    ]
   });
 
   $('.shop-content__filter-btn').on('click', function () {
