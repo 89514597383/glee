@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Потрачено</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header header-index" id="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/icons/logo.svg" alt="">
+          </a>
+          <div class="header__info">
+            <nav class="menu-top">
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a class="menu-top__link" href="#">
+                    Главная
+                  </a>
+                </li>
+                <li class="menu-top__item">
+                  <a class="menu-top__link" href="#">
+                    Меню
+                  </a>
+                </li>
+                <li class="menu-top__item dropdown">
+                  <a class="menu-top__link dropbtn" href="#">
+                    Еще...
+                  </a>
+                  <div class="dropdown-content">
+                    <a href="#">Фотоотчеты</a>
+                    <a href="#">Правила заведения</a>
+                  </div>
+                </li>
+                <li class="menu-top__item menu-top__item--mob">
+                  <a class="menu-top__link" href="#">
+                    Фотоотчеты
+                  </a>
+                </li>
+                <li class="menu-top__item menu-top__item--mob">
+                  <a class="menu-top__link" href="#">
+                    Правила заведения
+                  </a>
+                </li>
+              </ul>
+              <a class="header__btn" href="#">Забронировать</a>
+            </nav>
+            <a class="tel" href="#" data-modal="#modal-call">
+              <img class="tel__img" src="./images/icons/tel.svg" alt="">
+            </a>
+            <a class="header__btn  header__btn--mobile" href="#">Забронировать</a>
+            <button class="menu__btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="modal" id="modal-call">
+    <div class="modal__container">
+      <div class="modal__box">
+        <div class="modal__title">Оставьте заявку и мы вам перезвоним</div>
+        <form class="modal__form" action="#">
+          <input class="modal__input-name" type="text" placeholder="Ваше Имя" required>
+          <input class="modal__input-tel" type="text" placeholder="+7 (999) 999-99-99" required>
+          <button class="modal__link" type="submit">Оставить заявку</button>
+        </form>
+        <p class="modal__text">
+          Нажимая на кнопку "Оставить заявку", вы даете согласие на обработку персональных данных
+        </p>
+        <div class="modal__box-img" data-close>
+          <a class="modal__box-link" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 1L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1 1L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <section class="slider-top">
+      <div class="slider-top__container">
+        <div class="slider-top__inner">
+          <div class="slider-top__title">
+            Новости и акции
+          </div>
+          <div class="slider-top__items">
+            <div class="slider-top__item slider-top__discount">
+              <div class="slider-top__discount-subtitle">
+                Скидка
+              </div>
+              <div class="slider-top__discount-title">
+                10%
+              </div>
+              <div class="slider-top__discount-text">
+                всем студентам
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__timing">
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__gift">
+              <div class="slider-top__gift-numbers">
+                <span>1+1</span>
+                <span>=3</span>
+              </div>
+              <div class="slider-top__gift-text">
+                Третий коктейль
+              </div>
+              <div class="slider-top__gift-title">
+                в подарок
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__timing">
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__discount">
+              <div class="slider-top__discount-subtitle">
+                Скидка
+              </div>
+              <div class="slider-top__discount-title">
+                10%
+              </div>
+              <div class="slider-top__discount-text">
+                всем студентам
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__gift">
+              <div class="slider-top__gift-numbers">
+                <span>1+1</span>
+                <span>=3</span>
+              </div>
+              <div class="slider-top__gift-text">
+                Третий коктейль
+              </div>
+              <div class="slider-top__gift-title">
+                в подарок
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__timing">
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__discount">
+              <div class="slider-top__discount-subtitle">
+                Скидка
+              </div>
+              <div class="slider-top__discount-title">
+                10%
+              </div>
+              <div class="slider-top__discount-text">
+                всем студентам
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__gift">
+              <div class="slider-top__gift-numbers">
+                <span>1+1</span>
+                <span>=3</span>
+              </div>
+              <div class="slider-top__gift-text">
+                Третий коктейль
+              </div>
+              <div class="slider-top__gift-title">
+                в подарок
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__timing">
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__discount">
+              <div class="slider-top__discount-subtitle">
+                Скидка
+              </div>
+              <div class="slider-top__discount-title">
+                10%
+              </div>
+              <div class="slider-top__discount-text">
+                всем студентам
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+            <div class="slider-top__item slider-top__gift">
+              <div class="slider-top__gift-numbers">
+                <span>1+1</span>
+                <span>=3</span>
+              </div>
+              <div class="slider-top__gift-text">
+                Третий коктейль
+              </div>
+              <div class="slider-top__gift-title">
+                в подарок
+              </div>
+              <div class="slider-top__item-hover">
+                <div class="slider-top__item-hover__text">Подробнее</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="container">
+        <div class="menu__inner">
+          <div class="menu__top">
+            <div class="menu__top-inner">
+              <a class="menu__top-item menu__top-item--active" href="#tab-1">
+                Основное Меню
+              </a>
+              <a class="menu__top-item" href="#tab-2">
+                Барная карта
+              </a>
+            </div>
+            <form class="menu__top-form" action="#">
+              <input class="menu__top-input" type="text" placeholder="Поиск...">
+              <button class="menu__top-btn" type="submit">
+                <img src="images/icons/search.svg" alt="search img">
+              </button>
+            </form>
+          </div>
+          <div class="menu__content">
+            <div class="menu__content-item menu__content-item--active" id="tab-1">
+              <div class="dish card" data-ref="filter-1">
+                <div class="menu__info-crumbs">
+                  <div class="crumbs-filter">
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter="all">Все блюда</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-7">Роллы</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-2">Салаты</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-3">Горячие закуски</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-5">Паста</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-9">Бургеры</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-8">Пицы</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-4">Супы</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-6">Морепродукты</button>
+                  </div>
+                </div>
+                <div class="card__items">
+
+                  <div class="card__item mix category-5">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/19.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/19.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/19.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Букатини</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Спагетти, бекон, оливкового масла, пармезан, молотый чёрный перец.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">269₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-2">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/14.jpg"alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/14.jpg"alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/14.jpg"alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Салат пармиджано</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому
+                            кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также
+                            дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки форм развития.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов, мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">349₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item mix category-2">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/13.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/13.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/13.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Салат цезарь</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 18,8/12/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает
+                            широкому
+                            кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а
+                            также
+                            дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки форм
+                            развития.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">379₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-2">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/12.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/12.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/12.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Салат с тигровыми креветками</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает
+                            широкому
+                            кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а
+                            также
+                            дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки форм
+                            развития.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">409₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-3">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/11.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/11.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/11.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ХОТ-ДОГ VAGOS</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Чиабатта, айсберг, огурец, морковь по корейски, сосиска куриная, соус цезарь.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">159₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-3">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/10.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/10.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/10.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ХОТ-ДОГ BALLAS</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 17,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Чиабатта, сосиска мясная, Айсберг, огурец, морковь корейская, соус гриль , соус BBQ.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">149₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/1.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/1.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/1.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ФУРАЙ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис, сливочный сыр, авокадо, лосось, угорь, сухари панко, кляр
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">229₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/2.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/2.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/2.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">СЯКЕ ТЕМПУРА</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис, сливочный сыр, тобика, лосось, кляр
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">215₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/3.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/3.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/3.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">КАЛИФОРНИЯ ХОТ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис, сливочный сыр, сурими, тобика, огурец, авокадо, пармезан, майонез
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">199₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/4.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/4.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/4.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">РОЛЛ ИТАЛИЯ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис, сыр сливочный, угорь, сыр чедер, пармизан, кунжут
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">179₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/5.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/5.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/5.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ЗАПЕЧЕНЫЙ РОЛЛ СПАЙСИ С ЛОСОСЕМ И УГРЕМ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                          Рис, сыр сливочный, угорь, лосось, спайси соус, унаги соус, кунжут
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">189₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/6.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/6.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/6.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ФИЛАДЕЛЬФИЯ УНАГИ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис, угорь, сыр сливочный, огурец, кунжут, унаги соус
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">269₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/7.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/7.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/7.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ФИЛАДЕЛЬФИЯ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис, лосось, сыр сливочный, огурец, авокадо
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">199₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/8.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/8.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/8.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">КАЛИФОРНИЯ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Рис,сурими, тобика, майонез, огурец, авокадо.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">209₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-7">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/9.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/9.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/9.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">УНАГИ МАКИ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Угорь, рис, соус унаги, кунжут.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">199₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-4">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/15.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/15.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/15.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">аквакотта</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому
+                            кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также
+                            дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки форм развития.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">189₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item mix category-4">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/16.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/16.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/16.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Том Ям</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Острая паста Том Ям, cтебель лемонграсса, галангал, королевские креветки, кинза, тайский рыбный соус.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">209₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-8">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/17.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/17.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/17.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Дьябло</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Мясной соус болоньезе, соус бургер, соленые огурчики, томаты, красный лук, моцарелла.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">219₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-6">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/18.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/18.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/18.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">ТИГРОВЫЕ КРЕВЕТКИ</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            ТИГРОВЫЕ КРЕВЕТКИ С СОУСОМ ЧИЛИ
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">369₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item mix category-9">
+                    <div class="card__item-slider">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/20.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/20.jpg" alt="">
+                      <img class="card__img lazyload" src="./images/dummy.gif" data-src="./images/dish/20.jpg" alt="">
+                    </div>
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">куро</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Филе окорочка, томаты, айсберг, сры эменталлер, соус барбекю, лук, перец острый.
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">319₽</span>
+                          <span class="card__gram">/200г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="menu__btn-box">
+                  <a class="menu__btn-more" href="#">Показать еще</a>
+                </div>
+              </div>
+            </div>
+            <div class="menu__content-item" id="tab-2">              
+              <div class="bar card" data-ref="filter-2">
+                <div class="menu__info-crumbs">
+                  <div class="crumbs-filter">
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter="all">Все напитки</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-1">Чай зелёный</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-2">Чай чёрный</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-3">Кофе</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-4">Красное вино</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-5">Розовое вино</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-6">Белое вино</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-7">Шампанкое</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-8">Ликёр</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-9">Джин</button>
+                    <button class="crumbs-filter__btn filter-btn" type="button" data-filter=".category-10">Ром</button>
+                  </div>
+                </div>
+                <div class="card__items">
+
+                  <div class="card__item card__item mix category-1  category-4">
+                    <img class="card__img" src="./images/bar/1.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-2  category-8">
+                    <img class="card__img" src="./images/bar/2.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">Старый немец</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Olmeca Chocolate, Martini Bitter, Cola, сироп
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">269₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-3  category-6">
+                    <img class="card__img" src="./images/bar/3.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img " src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-4  category-1">
+                    <img class="card__img" src="./images/bar/4.jpg" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-5  category-10">
+                    <img class="card__img" src="./images/bar/1.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-6  category-9">
+                    <img class="card__img" src="./images/bar/2.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-7  category-8">
+                    <img class="card__img" src="./images/bar/1.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-8  category-7">
+                    <img class="card__img" src="./images/bar/3.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item card__item mix category-8  category-7">
+                    <img class="card__img" src="./images/bar/4.jpg" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card__item card__item mix category-10  category-5">
+                    <img class="card__img" src="./images/bar/2.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item card__item mix category-1  category-4">
+                    <img class="card__img" src="./images/bar/3.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img card__popular-img--active" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="card__item card__item mix category-2  category-3">
+                    <img class="card__img" src="./images/bar/1.png" alt="">
+                    <div class="card__box">
+                      <div class="card__box-wrapper">
+                        <div class="card__box-info">
+                          <h6 class="card__title">KAIF</h6>
+                          <p class="card__text">
+                            <span class="card__subtext">Ккал: 245</span>
+                            <span class="card__subtext">БЖУ: 19,8/12,5/0</span>
+                          </p>
+                          <p class="card__suptext">
+                            Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок
+                          </p>
+                        </div>
+                        <div class="card__question">
+                          <div class="card__question-box__img">
+                            <img class="card__question-img" src="./images/card/question.svg" alt="">
+                            <div class="card__question-text">
+                              Пища с ярко-выраженным острым вкусом. Часто используется для обозначения вин, фруктов, молочных продуктов,
+                              мяса, рыбы
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__box-inner">
+                        <div class="card__money">
+                          <span class="card__price">359₽</span>
+                          <span class="card__gram">/100г.</span>
+                        </div>
+                        <div class="card__btn">подробнее</div>
+                      </div>
+                      <div class="card__tags">
+                        <a class="card__tag card__tag-green" href="#">Вегетерианские блюда</a>
+                        <a class="card__tag card__tag-red" href="#">Выбор шефа</a>
+                        <a class="card__tag card__tag-red" href="#">Популярное</a>
+                        <a class="card__tag card__tag-red" href="#">Блюда до 400₽</a>
+                      </div>
+                    </div>
+                    <img class="card__bottom-img" src="./images/card/bottom.svg" alt="">
+                    <div class="card__favicon">
+                      <img class="card__chief-img card__chief-img--active" src="./images/card/chief.svg" alt="">
+                      <img class="card__popular-img" src="./images/card/popular.svg" alt="">
+                      <a class="card__popup" data-fancybox href="https://www.youtube.com/watch?v=46GgB9yGw_s">
+                        <div class="card__popup-btn">
+                          <div class="card__popup-play">
+                            <img class="card__popup-play__img" src="./images/card/play.svg" alt="">
+                          </div>
+                          <div class="card__popup-play__info">
+                            <div class="card__popup-title">ВИДЕО</div>
+                            <div class="card__popup-subtext">КАК ЕСТЬ</div>
+                            <div class="card__popup-text">БЛЮДО?</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card__cross">
+                      <img class="card__cross-img" src="./images/card/cross.svg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="menu__btn-box">
+                  <a class="menu__btn-more" href="#">Показать еще</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/icons/logo.svg" alt="">
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Главная
+              </a>
+              <a class="footer__link" href="#">
+                Меню
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Акции
+              </a>
+              <a class="footer__link" href="#">
+                Интерьер
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Команда
+              </a>
+              <a class="footer__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="footer__contacts">
+            <a class="footer__tel" href="tel:+78009999999">8 (800) 999-99-99</a>
+            <p class="footer__time">Бронь столов с 09:00 до 19:00</p>
+            <div class="footer__messenger">
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/telegram.svg" alt="">
+              </a>
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/viber.svg" alt="">
+              </a>
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/inst.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="#">Политика конфидециальности</a>
+          <a class="footer__bottom-link" href="#">Договор оферты</a>
+          <p class="footer__bottom-text">Информация на сайте не является публичной офертой</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
